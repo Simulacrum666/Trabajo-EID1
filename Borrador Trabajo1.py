@@ -1,16 +1,21 @@
 import matplotlib.pyplot as plt
-import sympy as sm
-from sympy import solve, symbols
-from sympy.abc import x
+import sympy as sp
 
-#A=input(str("Ingrese una funcion (X como incognita): "))
+expresion=(input("Ingrese una funcion (X como incognita): "))
 
-#B=input(str("Ingrese el valor de X: "))
-x=symbols('x')
-#print(B)
+f = sp.sympify(expresion)
 
-C=solve(2*x)
-print(C)
+print(f)
+
+x_val=int(input("Ingrese el valor de X: "))
+
+x=sp.symbols('x')
+
+print(x_val)
+
+print(f.subs(x, x_val))
+
+
 
 
 #grafica def

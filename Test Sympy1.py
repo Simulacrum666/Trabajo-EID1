@@ -1,4 +1,10 @@
-from sympy import nsolve, cos
-from sympy.abc import x
+import sympy as sp
 
-print(nsolve(cos(x) - x, x, 2))
+# Definir símbolos
+x, y = sp.symbols('x y')
+
+# Crear función
+f = x**2 + 2*y
+
+# Evaluar
+print(f.subs({x: 5, y: 2}))
