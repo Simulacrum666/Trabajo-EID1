@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import sympy as sp
-
+#update 1.1
 expresion=(input("Ingrese una funcion (X como incognita): "))
 
 f = sp.sympify(expresion)
